@@ -1,0 +1,22 @@
+# Basic Manim configuration
+
+# Renderer settings
+renderer: CairoRenderer  # Choose the renderer (e.g., CairoRenderer, OpenGLRenderer)
+
+# Video settings
+pixel_height: 720        # Height of the video in pixels
+pixel_width: 1280        # Width of the video in pixels
+frame_height: 6.0        # Height of each frame (in 16:9 aspect ratio)
+frame_width: 6.0         # Width of each frame (in 16:9 aspect ratio)
+frame_rate: 30           # Frames per second (FPS)
+output_file: example     # Output video file name (without extension)
+
+# LaTeX settings (for mathematical expressions)
+tex_compiler: xelatex   # LaTeX compiler to use (e.g., pdflatex, xelatex, lualatex)
+tex_template: default    # LaTeX template to use (e.g., default, custom_template.tex)
+
+# Scene settings
+background_color: WHITE  # Background color of the scene
+
+# Additional settings
+log_to_file: false       # Log Manim output to a file (true or false)

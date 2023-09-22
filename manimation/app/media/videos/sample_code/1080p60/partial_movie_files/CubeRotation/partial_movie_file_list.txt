@@ -1,0 +1,8 @@
+# This file is used internally by FFMPEG.
+file 'file:/Users/aqibahmed/manimation/manimation/app/media/videos/sample_code/1080p60/partial_movie_files/CubeRotation/4052461372_1387403784_2438449856.mp4'
+file 'file:/Users/aqibahmed/manimation/manimation/app/media/videos/sample_code/1080p60/partial_movie_files/CubeRotation/4209587024_3115203974_3085716064.mp4'
+file 'file:/Users/aqibahmed/manimation/manimation/app/media/videos/sample_code/1080p60/partial_movie_files/CubeRotation/4209587024_272417710_1500666972.mp4'
+file 'file:/Users/aqibahmed/manimation/manimation/app/media/videos/sample_code/1080p60/partial_movie_files/CubeRotation/4209587024_2992370768_3509940572.mp4'
+file 'file:/Users/aqibahmed/manimation/manimation/app/media/videos/sample_code/1080p60/partial_movie_files/CubeRotation/4209587024_2322736572_3509940572.mp4'
+file 'file:/Users/aqibahmed/manimation/manimation/app/media/videos/sample_code/1080p60/partial_movie_files/CubeRotation/4209587024_543208858_1500666972.mp4'
+file 'file:/Users/aqibahmed/manimation/manimation/app/media/videos/sample_code/1080p60/partial_movie_files/CubeRotation/4209587024_1804042621_2944357041.mp4'
