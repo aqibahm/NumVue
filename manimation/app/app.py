@@ -4,13 +4,37 @@ import openai
 import streamlit as st
 import re
 
+# Helper Functions:
+openai_api_key = st.secrets["OPENAI_API_KEY"]
+
+if "messages" not in st.session_state:
+    st.session_state["messages"] = [{"role": "assistant", "content": "How can I help you?"}]
+
+# for msg in st.session_state.messages:
+#     st.chat_message(msg["role"]).write(msg["content"])
+
+# Visual Controls:
+if "show_manim_viewer" not in st.session_state:
+    st.session_state["show_manim_viewer"] = False
+    print("Current st.session_state['show_manim_viewer']", st.session_state['show_manim_viewer'], "of type ", type(st.session_state["show_manim_viewer"]))
+
+if "show_chat_input" not in st.session_state:
+    st.session_state["show_chat_input"] = True
+    print("Current st.session_state['show_manim_viewer']", st.session_state['show_manim_viewer'], "of type ", type(st.session_state["show_manim_viewer"]))
+
+# if st.session_state.messages:
+    # st.chat_message(st.session_state.messages[-1]["role"]).write(st.session_state.messages[-1]["content"])
+
 # TODO:
 # 1. Add st.status()
 # 2. Create hierarchy of animation elements in manim.
 # 3. Extract animation requirements from prompt.
 # 4. Based on hierarchical animation specifics, Langchain parser relevant manim docs to extract relevant elements and their syntax.
 # 5. Produce code using the relevant docs, including all the elements extracted in step 2.
-# 6. Return animation vide.
+# 6. Return animation video.
+
+# Urgent:
+# - Refactor code as functions.
 
 def extract_code(text):
     pattern = r'```python(.*?)```'
@@ -23,29 +47,12 @@ def search_file_for_string(filename, target_string):
     with open(filename, 'r') as file:
         # Read each line
         for line in file:
-            if target in line:
+            if target_string in line:
                 matched_lines.append(line)
             print(line, end='')
     return matched_lines
 
-
-# Notes on prompt engineering:
-# 1. Erroneous use of ShowCreation() instead of Create() (Manim CE doc conflict with older docs.)
-
-with st.sidebar:
-    openai_api_key = st.secrets["OPENAI_API_KEY"]
-
-st.title("👁️ NumVue")
-
-if "messages" not in st.session_state:
-    st.session_state["messages"] = [{"role": "assistant", "content": "How can I help you?"}]
-
-class_name_exists = False
-
-# if st.session_state.messages:
-    # st.chat_message(st.session_state.messages[-1]["role"]).write(st.session_state.messages[-1]["content"])
-
-if prompt_ := st.text_input("What shall we imagine?"):
+def create_chat_model(openai_api_key, prompt_):
     if not openai_api_key:
         st.info("Please add your OpenAI API key to continue.")
         st.stop()
@@ -54,20 +61,15 @@ if prompt_ := st.text_input("What shall we imagine?"):
 
     prompt = "Using Manim CE and Python, generate only the scene class with all relevant import statements, use 'axes.plot()' and 'self.add(axes)' instead of 'self.get_graph()' for visualizing axes, use Create() instead of ShowCreation(), use ParametricFunction() instead of self.get_parametric_function(), uses Axes.add_coordinates() to add coordinate labels, starting the code as 'class GeneratedCode(ThreeDScene):' " + prompt_
 
-    st.session_state.messages.append({"role": "user", "content": prompt})
+    # st.session_state.messages.append({"role": "user", "content": prompt})
     # st.chat_message("user").write(prompt_)
 
     response = openai.ChatCompletion.create(model="gpt-3.5-turbo", temperature = 0, messages=st.session_state.messages)
-    msg = response.choices[0].message
 
-    # st.session_state.messages.append(msg)
-    # TODO:
-    # 1. Parse code block from GPT response.
-    # 2. Split string at newline delimiter, print line-wise.
-    # print("\nMessage content: ", st.session_state.messages[-1])
-    # print("\nMessage type: ", type(st.session_state.messages[-1]))
-    # print("\n\n\n\n")
+    return response.choices[0].message
 
+def process_gpt_response(msg):
+    print(msg)
     codes = extract_code(msg["content"])
     for code in codes:
         print(code.strip())
@@ -79,12 +81,9 @@ if prompt_ := st.text_input("What shall we imagine?"):
             for code in codes:
                 file.write(code.strip())
 
-    print("File 'new_file.py' has been written.")
+        print("File 'new_file.py' has been written.")
 
-    # st.chat_message("assistant").write(msg.content)
-
-    # Example of use
-    filename = './utils/manim_scripts/sample_code.py'
+def extract_class_name(filename):
     target = 'class'
     matches = search_file_for_string(filename, target)
 
@@ -98,52 +97,84 @@ if prompt_ := st.text_input("What shall we imagine?"):
     # Naive implementation for now:
     class_name = matches[0].split(' ')[1].split('(')[0]
     if class_name or class_name != '':
-        class_name_exists = True
         print("\n Class Name: ", class_name)
+        # Class name found in GPT response, show manim_viewer
+        return class_name
+
     else:
         raise Exception('The variable does not exist.')
 
-    if class_name_exists:
+def manim_viewer():
+    # This is hardcoded for now:
+    class_name = "GeneratedCode"
 
-        # Streamlit app title
-        st.title("Voilà!")
+    # Streamlit app title
+    st.title("Voilà!")
+    # Streamlit widgets for user interaction
+    # manim_script_title = st.text_input("Enter your Manim script's title: ")
+    if st.button("Bake Animation 🎂"):
+        # Check if the user provided a valid Manim script path
 
-        # Streamlit widgets for user interaction
-        # manim_script_title = st.text_input("Enter your Manim script's title: ")
+        manim_script_path = "./utils/manim_scripts/sample_code.py"
+        video_path = "./media/videos/sample_code/1080p60/" + class_name.strip() + ".mp4"
+        print("Video Path: ", video_path)
+        if os.path.exists(video_path):
+            os.remove(video_path)
 
-        if st.button("Bake Animation 🎂"):
-            # Check if the user provided a valid Manim script path
-            if class_name_exists:
-                manim_script_path = "./utils/manim_scripts/sample_code.py"
+        # Run the Manim script in a subprocess
+        with subprocess.Popen(["manim", "-qh", manim_script_path, "output_video"], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text = True) as process:
+            # Continuously check if the video animation is ready
+            with st.spinner("Baking animation!"):
+                while process.poll() is None:
+                    continue
+                # Show progress indicator in Streamlit
+            st.text("Freshly baked, for you.")
 
-                video_path = "./media/videos/sample_code/1080p60/" + class_name.strip() + ".mp4"
-                print("Video Path: ", video_path)
+        print(video_path)
+        print(os.getcwd())
+        # Check the subprocess return code (0 means success)
+        if os.path.exists(video_path):
+            print("File Exists!")
+            with st.expander("Cake"):
+                st.video(video_path)
+        else:
+            print("\nVideo file not found.")
 
-                if os.path.exists(video_path):
-                    os.remove(video_path)
+    if st.button("Re-Imagine"):
+        reset_view()
+        st.experimental_rerun()
 
-                # Run the Manim script in a subprocess
-                with subprocess.Popen(["manim", "-qh", manim_script_path, "output_video"], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text = True) as process:
 
-                    # Continuously check if the video animation is ready
-                    with st.spinner("Baking animation!"):
-                        while process.poll() is None:
-                            continue
-                        # Show progress indicator in Streamlit
+def chat_input(prompt_):
+    msg = create_chat_model(openai_api_key, prompt_)
 
-                    st.text("Freshly baked, for you.")
+    process_gpt_response(msg)
 
-                print(video_path)
-                print(os.getcwd())
+    filename = './utils/manim_scripts/sample_code.py'
+    class_name = extract_class_name(filename)
+    st.session_state["show_manim_viewer"] = True
+    st.session_state["show_chat_input"] = False
+    print("Current st.session_state['show_manim_viewer']", st.session_state['show_manim_viewer'], "of type ", type(st.session_state["show_manim_viewer"]))
 
-                # Check the subprocess return code (0 means success)
-                if os.path.exists(video_path):
-                    print("File Exists!")
-                    with st.expander("Cake"):
-                        st.video(video_path)
+    if not class_name:
+        raise Exception("Relevant class not found inside generated code.")
 
-                else:
-                    print("\nVideo file not found.")
+    st.experimental_rerun()
 
-            else:
-                st.error("Valid class name for manim script not found.")
+def reset_view():
+    st.session_state["show_chat_input"] = True
+    st.session_state["show_manim_viewer"] = False
+
+
+st.title("👁️ NumVue")
+
+
+if st.session_state["show_chat_input"]:
+    if prompt_ := st.text_input("What shall we imagine?"):
+        chat_input(prompt_)
+
+if st.session_state["show_manim_viewer"]:
+    manim_viewer()
+
+
+
