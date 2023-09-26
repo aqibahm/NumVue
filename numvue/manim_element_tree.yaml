@@ -1,0 +1,401 @@
+Manim:
+  Animations:
+    animation:
+      - Animation
+      - Wait
+
+    changing:
+      - AnimatedBoundary
+      - TracedPath
+
+    composition:
+      - AnimationGroup
+      - LaggedStart
+      - LaggedStartMap
+      - Succession
+
+    creation:
+      - AddTextLetterByLetter
+      - AddTextWordByWord
+      - Create
+      - DrawBorderThenFill
+      - RemoveTextLetterByLetter
+      - ShowIncreasingSubsets
+      - ShowPartial
+      - ShowSubmobjectsOneByOne
+      - SpiralIn
+      - Uncreate
+      - Unwrite
+      - Write
+
+    fading:
+      - FadeIn
+      - FadeOut
+
+    growing:
+      - GrowArrow
+      - GrowFromCenter
+      - GrowFromEdge
+      - GrowFromPoint
+      - SpinInFromNothing
+
+    indication:
+      - ApplyWave
+      - Circumscribe
+      - Flash
+      - FocusOn
+      - Indicate
+      - ShowCreationThenFade
+      - ShowPassingFlash
+      - ShowPassingFlashWithThinningStrokeWidth
+      - Wiggle
+
+    movement:
+      - ComplexHomotopy
+      - Homotopy
+      - MoveAlongPath
+      - PhaseFlow
+      - SmoothedVectorizedHomotopy
+
+    numbers:
+      - ChangeDecimalToValue
+      - ChangingDecimal
+
+    rotation:
+      - Rotate
+      - Rotating
+
+    specialized:
+      - Broadcast
+
+    speedmodifier:
+      - ChangeSpeed
+
+    transform:
+      - ApplyComplexFunction
+      - ApplyFunction
+      - ApplyMatrix
+      - ApplyMethod
+      - ApplyPointwiseFunction
+      - ApplyPointwiseFunctionToCenter
+      - ClockwiseTransform
+      - CounterclockwiseTransform
+      - CyclicReplace
+      - FadeToColor
+      - FadeTransform
+      - FadeTransformPieces
+      - MoveToTarget
+      - ReplacementTransform
+      - Restore
+      - ScaleInPlace
+      - ShrinkToCenter
+      - Swap
+      - Transform
+      - TransformAnimations
+      - TransformFromCopy
+
+    transform_matching_parts:
+      - TransformMatchingShapes
+      - TransformMatchingTex
+
+    updaters:
+      - mobject_update_utils
+      - update
+        - MaintainPositionRelativeTo
+        - UpdateFromAlphaFunc
+        - UpdateFromFunc
+
+  Cameras:
+    camera:
+      - BackgroundColoredVMobjectDisplayer
+      - Camera
+
+    mapping_camera:
+      - MappingCamera
+      - OldMultiCamera
+      - SplitScreenCamera
+
+    moving_camera:
+      - MovingCamera
+
+    multi_camera:
+      - MultiCamera
+
+    three_d_camera:
+      - ThreeDCamera
+
+  Configuration:
+    _config:
+      - URLs
+
+    utils:
+      logger_utils:
+        - JSONFormatter
+
+  Mobjects:
+    frame:
+      - FullScreenRectangle
+      - ScreenRectangle
+
+    geometry:
+      arc:
+        - AnnotationDot
+        - AnnularSector
+        - Annulus
+        - Arc
+        - ArcBetweenPoints
+        - ArcPolygon
+        - ArcPolygonFromArcs
+        - Circle
+        - CubicBezier
+        - CurvedArrow
+        - CurvedDoubleArrow
+        - Dot
+        - Ellipse
+        - LabeledDot
+        - Sector
+        - TipableVMObject
+
+      boolean_ops:
+        - Difference
+        - Exclusion
+        - Intersection
+        - Union
+
+      line:
+        - Angle
+        - Arrow
+        - DashedLine
+        - DoubleArrow
+        - Elbow
+        - Line
+        - RightAngle
+        - TangentLine
+        - Vector
+
+      polygram:
+        - Cutout
+        - Polygon
+        - Polygram
+        - Rectangle
+        - RegularPolygon
+        - RegularPolygram
+        - RoundedRectangle
+        - Square
+        - Star
+        - Triangle
+
+      shape_matchers:
+        - BackgroundRectangle
+        - Cross
+        - SurroundingRectangle
+        - Underline
+
+      tips:
+        - ArrowCircleFilledTip
+        - ArrowCircleTip
+        - ArrowSquareFilledTip
+        - ArrowTip
+        - ArrowTriangleFilledTip
+        - ArrowTriangleTip
+        - StealthTip
+
+      graph:
+        - DiGraph
+        - GenericGraph
+        - Graph
+
+      graphing:
+        coordinate_systems:
+          - Axes
+          - ComplexPlane
+          - CoordinateSystem
+          - NumberPlane
+          - PolarPlane
+          - ThreeDAxes
+
+        functions:
+          - FunctionGraph
+          - ImplicitFunction
+          - ParametricFunction
+
+        number_line:
+          - number_line
+          - UnitInterval
+
+        probability:
+          - BarChart
+          - SampleSpace
+
+        scale:
+          - LinearBase
+          - LogBase
+
+    logo:
+      - ManimBanner
+
+    geometry:
+      - DecimalMatrix
+      - IntegerMatrix
+      - Matrix
+      - MobjectMatrix
+
+    mobject:
+      - Group
+      - Mobject
+
+    svg:
+      - brace
+      - svg_mobject
+
+    table:
+      - DecimalTable
+      - IntegerTable
+      - MathTable
+      - MobjectTable
+      - Table
+
+    text:
+      - code_mobject
+      - numbers
+      - tex_mobject
+      - text_mobject
+
+  three_d:
+    polyhedra:
+      - Dodecahedron
+      - Isocahedron
+      - Octahedron
+      - Polyhedron
+      - Tetrahedron
+
+    - three_d_utils
+
+    three_dimensions:
+      - Arrow3D
+      - Cone
+      - Cube
+      - Cylinder
+      - Dot3D
+      - Line3D
+      - Prism
+      - Sphere
+      - Surface
+      - ThreeDVMobject
+      - Torus
+
+    types:
+      image_mobject:
+        - AbstractImageMobject
+        - ImageMobject
+        - ImageMobjectFromCamera
+
+      point_cloud_mobject:
+        - Mobject1D
+        - Mobject2D
+        - PGroup
+        - PMobject
+        - Point
+        - PointCloudDot
+
+      vectorized_mobject:
+        - CurvesAsSubmobject
+        - DashedVMobject
+        - VDict
+        - VGroup
+        - VMobject
+        - VectorizedPoint
+
+    value_tracker:
+      - ComplexValueTracker
+      - ValueTracker
+
+    vector_field:
+      - ArrowVectorField
+      - StreamLines
+      - VectorField
+
+    - utils
+
+  Scenes:
+    moving_camera_scene:
+      - MovingCameraScene
+
+    section:
+      - DefaultSectionType
+      - Section
+
+    scene:
+      - RerunSceneHandler
+      - Scene
+
+    scene_file_writer:
+      - SceneFileWriter
+
+    three_d_scene:
+      - SpecialThreeDScene
+      - ThreeDScene
+
+    vector_space_scene:
+      - LinearTransformationScene
+      - VectorScene
+
+    zoomed_scene:
+      - ZoomedScene
+
+  Utilities and other modules:
+    constants:
+      - LineJointType
+
+    color:
+      - Colors
+
+    config_ops:
+      - DictAsObjects
+
+    ipython_magic:
+      - ManimMagic
+
+    tex:
+      - TexTemplate
+      - TexTemplateFromFile
+
+    tex_templates:
+      - TexFontTemplates
+      - TexTemplateLibrary
+
+    Geometric:
+      - Line
+      - Rectangle
+      - Circle
+      - Ellipse
+      - Polygon
+      - Triangle
+
+    Text:
+      - Text
+      - MathTex
+      - Tex
+
+    SVG:
+      - SVGMobject
+
+    ThreeD:
+      - Sphere
+      - Cylinder
+      - Cone
+
+    - tex_file_writing
+    - images
+    - iteratable
+    - paths
+    - rate_functions
+    - simple_functions
+    - sounds
+    - space_ops
+    - deprecation
+    - commands
+    - bezier
+    - debug
+    - docbuild
+    - hashing

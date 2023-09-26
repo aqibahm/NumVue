@@ -1,0 +1,686 @@
+reference:
+  link: https://docs.manim.community/en/stable/reference.html#module-index
+reference/manim:
+  _config:
+    link: https://docs.manim.community/en/stable/reference/manim._config.html
+    logger_utils:
+      JSONFormatter:
+        link: https://docs.manim.community/en/stable/reference/manim._config.logger_utils.JSONFormatter.html
+      link: https://docs.manim.community/en/stable/reference/manim._config.logger_utils.html
+    utils:
+      ManimConfig:
+        link: https://docs.manim.community/en/stable/reference/manim._config.utils.ManimConfig.html
+      ManimFrame:
+        link: https://docs.manim.community/en/stable/reference/manim._config.utils.ManimFrame.html
+      link: https://docs.manim.community/en/stable/reference/manim._config.utils.html
+  animation:
+    animation:
+      Animation:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.animation.Animation.html
+      Wait:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.animation.Wait.html
+      link: https://docs.manim.community/en/stable/reference/manim.animation.animation.html
+    changing:
+      AnimatedBoundary:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.changing.AnimatedBoundary.html
+      TracedPath:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.changing.TracedPath.html
+      link: https://docs.manim.community/en/stable/reference/manim.animation.changing.html
+    composition:
+      AnimationGroup:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.composition.AnimationGroup.html
+      LaggedStart:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.composition.LaggedStart.html
+      LaggedStartMap:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.composition.LaggedStartMap.html
+      Succession:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.composition.Succession.html
+      link: https://docs.manim.community/en/stable/reference/manim.animation.composition.html
+    creation:
+      AddTextLetterByLetter:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.creation.AddTextLetterByLetter.html
+      AddTextWordByWord:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.creation.AddTextWordByWord.html
+      Create:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.creation.Create.html
+      DrawBorderThenFill:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.creation.DrawBorderThenFill.html
+      RemoveTextLetterByLetter:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.creation.RemoveTextLetterByLetter.html
+      ShowIncreasingSubsets:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.creation.ShowIncreasingSubsets.html
+      ShowPartial:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.creation.ShowPartial.html
+      ShowSubmobjectsOneByOne:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.creation.ShowSubmobjectsOneByOne.html
+      SpiralIn:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.creation.SpiralIn.html
+      Uncreate:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.creation.Uncreate.html
+      Unwrite:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.creation.Unwrite.html
+      Write:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.creation.Write.html
+      link: https://docs.manim.community/en/stable/reference/manim.animation.creation.html
+    fading:
+      FadeIn:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.fading.FadeIn.html
+      FadeOut:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.fading.FadeOut.html
+      link: https://docs.manim.community/en/stable/reference/manim.animation.fading.html
+    growing:
+      GrowArrow:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.growing.GrowArrow.html
+      GrowFromCenter:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.growing.GrowFromCenter.html
+      GrowFromEdge:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.growing.GrowFromEdge.html
+      GrowFromPoint:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.growing.GrowFromPoint.html
+      SpinInFromNothing:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.growing.SpinInFromNothing.html
+      link: https://docs.manim.community/en/stable/reference/manim.animation.growing.html
+    indication:
+      ApplyWave:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.indication.ApplyWave.html
+      Circumscribe:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.indication.Circumscribe.html
+      Flash:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.indication.Flash.html
+      FocusOn:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.indication.FocusOn.html
+      Indicate:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.indication.Indicate.html
+      ShowCreationThenFadeOut:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.indication.ShowCreationThenFadeOut.html
+      ShowPassingFlash:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.indication.ShowPassingFlash.html
+      ShowPassingFlashWithThinningStrokeWidth:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.indication.ShowPassingFlashWithThinningStrokeWidth.html
+      Wiggle:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.indication.Wiggle.html
+      link: https://docs.manim.community/en/stable/reference/manim.animation.indication.html
+    movement:
+      ComplexHomotopy:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.movement.ComplexHomotopy.html
+      Homotopy:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.movement.Homotopy.html
+      MoveAlongPath:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.movement.MoveAlongPath.html
+      PhaseFlow:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.movement.PhaseFlow.html
+      SmoothedVectorizedHomotopy:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.movement.SmoothedVectorizedHomotopy.html
+      link: https://docs.manim.community/en/stable/reference/manim.animation.movement.html
+    numbers:
+      ChangeDecimalToValue:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.numbers.ChangeDecimalToValue.html
+      ChangingDecimal:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.numbers.ChangingDecimal.html
+      link: https://docs.manim.community/en/stable/reference/manim.animation.numbers.html
+    rotation:
+      Rotate:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.rotation.Rotate.html
+      Rotating:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.rotation.Rotating.html
+      link: https://docs.manim.community/en/stable/reference/manim.animation.rotation.html
+    specialized:
+      Broadcast:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.specialized.Broadcast.html
+      link: https://docs.manim.community/en/stable/reference/manim.animation.specialized.html
+    speedmodifier:
+      ChangeSpeed:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.speedmodifier.ChangeSpeed.html
+      link: https://docs.manim.community/en/stable/reference/manim.animation.speedmodifier.html
+    transform:
+      ApplyComplexFunction:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.transform.ApplyComplexFunction.html
+      ApplyFunction:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.transform.ApplyFunction.html
+      ApplyMatrix:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.transform.ApplyMatrix.html
+      ApplyMethod:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.transform.ApplyMethod.html
+      ApplyPointwiseFunction:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.transform.ApplyPointwiseFunction.html
+      ApplyPointwiseFunctionToCenter:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.transform.ApplyPointwiseFunctionToCenter.html
+      ClockwiseTransform:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.transform.ClockwiseTransform.html
+      CounterclockwiseTransform:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.transform.CounterclockwiseTransform.html
+      CyclicReplace:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.transform.CyclicReplace.html
+      FadeToColor:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.transform.FadeToColor.html
+      FadeTransform:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.transform.FadeTransform.html
+      FadeTransformPieces:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.transform.FadeTransformPieces.html
+      MoveToTarget:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.transform.MoveToTarget.html
+      ReplacementTransform:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.transform.ReplacementTransform.html
+      Restore:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.transform.Restore.html
+      ScaleInPlace:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.transform.ScaleInPlace.html
+      ShrinkToCenter:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.transform.ShrinkToCenter.html
+      Swap:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.transform.Swap.html
+      Transform:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.transform.Transform.html
+      TransformAnimations:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.transform.TransformAnimations.html
+      TransformFromCopy:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.transform.TransformFromCopy.html
+      link: https://docs.manim.community/en/stable/reference/manim.animation.transform.html
+    transform_matching_parts:
+      TransformMatchingAbstractBase:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.transform_matching_parts.TransformMatchingAbstractBase.html
+      TransformMatchingShapes:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.transform_matching_parts.TransformMatchingShapes.html
+      TransformMatchingTex:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.transform_matching_parts.TransformMatchingTex.html
+      link: https://docs.manim.community/en/stable/reference/manim.animation.transform_matching_parts.html
+    updaters:
+      link: https://docs.manim.community/en/stable/reference/manim.animation.updaters.html
+      mobject_update_utils:
+        link: https://docs.manim.community/en/stable/reference/manim.animation.updaters.mobject_update_utils.html
+      update:
+        MaintainPositionRelativeTo:
+          link: https://docs.manim.community/en/stable/reference/manim.animation.updaters.update.MaintainPositionRelativeTo.html
+        UpdateFromAlphaFunc:
+          link: https://docs.manim.community/en/stable/reference/manim.animation.updaters.update.UpdateFromAlphaFunc.html
+        UpdateFromFunc:
+          link: https://docs.manim.community/en/stable/reference/manim.animation.updaters.update.UpdateFromFunc.html
+        link: https://docs.manim.community/en/stable/reference/manim.animation.updaters.update.html
+  camera:
+    camera:
+      BackgroundColoredVMobjectDisplayer:
+        link: https://docs.manim.community/en/stable/reference/manim.camera.camera.BackgroundColoredVMobjectDisplayer.html
+      Camera:
+        link: https://docs.manim.community/en/stable/reference/manim.camera.camera.Camera.html
+      link: https://docs.manim.community/en/stable/reference/manim.camera.camera.html
+    mapping_camera:
+      MappingCamera:
+        link: https://docs.manim.community/en/stable/reference/manim.camera.mapping_camera.MappingCamera.html
+      OldMultiCamera:
+        link: https://docs.manim.community/en/stable/reference/manim.camera.mapping_camera.OldMultiCamera.html
+      SplitScreenCamera:
+        link: https://docs.manim.community/en/stable/reference/manim.camera.mapping_camera.SplitScreenCamera.html
+      link: https://docs.manim.community/en/stable/reference/manim.camera.mapping_camera.html
+    moving_camera:
+      MovingCamera:
+        link: https://docs.manim.community/en/stable/reference/manim.camera.moving_camera.MovingCamera.html
+      link: https://docs.manim.community/en/stable/reference/manim.camera.moving_camera.html
+    multi_camera:
+      MultiCamera:
+        link: https://docs.manim.community/en/stable/reference/manim.camera.multi_camera.MultiCamera.html
+      link: https://docs.manim.community/en/stable/reference/manim.camera.multi_camera.html
+    three_d_camera:
+      ThreeDCamera:
+        link: https://docs.manim.community/en/stable/reference/manim.camera.three_d_camera.ThreeDCamera.html
+      link: https://docs.manim.community/en/stable/reference/manim.camera.three_d_camera.html
+  constants:
+    LineJointType:
+      link: https://docs.manim.community/en/stable/reference/manim.constants.LineJointType.html
+    RendererType:
+      link: https://docs.manim.community/en/stable/reference/manim.constants.RendererType.html
+    link: https://docs.manim.community/en/stable/reference/manim.constants.html
+  mobject:
+    frame:
+      FullScreenRectangle:
+        link: https://docs.manim.community/en/stable/reference/manim.mobject.frame.FullScreenRectangle.html
+      ScreenRectangle:
+        link: https://docs.manim.community/en/stable/reference/manim.mobject.frame.ScreenRectangle.html
+      link: https://docs.manim.community/en/stable/reference/manim.mobject.frame.html
+    geometry:
+      arc:
+        AnnotationDot:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.arc.AnnotationDot.html
+        AnnularSector:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.arc.AnnularSector.html
+        Annulus:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.arc.Annulus.html
+        Arc:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.arc.Arc.html
+        ArcBetweenPoints:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.arc.ArcBetweenPoints.html
+        ArcPolygon:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.arc.ArcPolygon.html
+        ArcPolygonFromArcs:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.arc.ArcPolygonFromArcs.html
+        Circle:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.arc.Circle.html
+        CubicBezier:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.arc.CubicBezier.html
+        CurvedArrow:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.arc.CurvedArrow.html
+        CurvedDoubleArrow:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.arc.CurvedDoubleArrow.html
+        Dot:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.arc.Dot.html
+        Ellipse:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.arc.Ellipse.html
+        LabeledDot:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.arc.LabeledDot.html
+        Sector:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.arc.Sector.html
+        TipableVMobject:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.arc.TipableVMobject.html
+        link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.arc.html
+      boolean_ops:
+        Difference:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.boolean_ops.Difference.html
+        Exclusion:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.boolean_ops.Exclusion.html
+        Intersection:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.boolean_ops.Intersection.html
+        Union:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.boolean_ops.Union.html
+        link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.boolean_ops.html
+      line:
+        Angle:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.line.Angle.html
+        Arrow:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.line.Arrow.html
+        DashedLine:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.line.DashedLine.html
+        DoubleArrow:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.line.DoubleArrow.html
+        Elbow:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.line.Elbow.html
+        Line:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.line.Line.html
+        RightAngle:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.line.RightAngle.html
+        TangentLine:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.line.TangentLine.html
+        Vector:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.line.Vector.html
+        link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.line.html
+      link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.html
+      polygram:
+        Cutout:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.polygram.Cutout.html
+        Polygon:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.polygram.Polygon.html
+        Polygram:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.polygram.Polygram.html
+        Rectangle:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.polygram.Rectangle.html
+        RegularPolygon:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.polygram.RegularPolygon.html
+        RegularPolygram:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.polygram.RegularPolygram.html
+        RoundedRectangle:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.polygram.RoundedRectangle.html
+        Square:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.polygram.Square.html
+        Star:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.polygram.Star.html
+        Triangle:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.polygram.Triangle.html
+        link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.polygram.html
+      shape_matchers:
+        BackgroundRectangle:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.shape_matchers.BackgroundRectangle.html
+        Cross:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.shape_matchers.Cross.html
+        SurroundingRectangle:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.shape_matchers.SurroundingRectangle.html
+        Underline:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.shape_matchers.Underline.html
+        link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.shape_matchers.html
+      tips:
+        ArrowCircleFilledTip:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.tips.ArrowCircleFilledTip.html
+        ArrowCircleTip:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.tips.ArrowCircleTip.html
+        ArrowSquareFilledTip:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.tips.ArrowSquareFilledTip.html
+        ArrowSquareTip:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.tips.ArrowSquareTip.html
+        ArrowTip:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.tips.ArrowTip.html
+        ArrowTriangleFilledTip:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.tips.ArrowTriangleFilledTip.html
+        ArrowTriangleTip:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.tips.ArrowTriangleTip.html
+        StealthTip:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.tips.StealthTip.html
+        link: https://docs.manim.community/en/stable/reference/manim.mobject.geometry.tips.html
+    graph:
+      DiGraph:
+        link: https://docs.manim.community/en/stable/reference/manim.mobject.graph.DiGraph.html
+      GenericGraph:
+        link: https://docs.manim.community/en/stable/reference/manim.mobject.graph.GenericGraph.html
+      Graph:
+        link: https://docs.manim.community/en/stable/reference/manim.mobject.graph.Graph.html
+      link: https://docs.manim.community/en/stable/reference/manim.mobject.graph.html
+    graphing:
+      coordinate_systems:
+        Axes:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.graphing.coordinate_systems.Axes.html
+        ComplexPlane:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.graphing.coordinate_systems.ComplexPlane.html
+        CoordinateSystem:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.graphing.coordinate_systems.CoordinateSystem.html
+        NumberPlane:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.graphing.coordinate_systems.NumberPlane.html
+        PolarPlane:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.graphing.coordinate_systems.PolarPlane.html
+        ThreeDAxes:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.graphing.coordinate_systems.ThreeDAxes.html
+        link: https://docs.manim.community/en/stable/reference/manim.mobject.graphing.coordinate_systems.html
+      functions:
+        FunctionGraph:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.graphing.functions.FunctionGraph.html
+        ImplicitFunction:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.graphing.functions.ImplicitFunction.html
+        ParametricFunction:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.graphing.functions.ParametricFunction.html
+        link: https://docs.manim.community/en/stable/reference/manim.mobject.graphing.functions.html
+      link: https://docs.manim.community/en/stable/reference/manim.mobject.graphing.html
+      number_line:
+        NumberLine:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.graphing.number_line.NumberLine.html
+        UnitInterval:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.graphing.number_line.UnitInterval.html
+        link: https://docs.manim.community/en/stable/reference/manim.mobject.graphing.number_line.html
+      probability:
+        BarChart:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.graphing.probability.BarChart.html
+        SampleSpace:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.graphing.probability.SampleSpace.html
+        link: https://docs.manim.community/en/stable/reference/manim.mobject.graphing.probability.html
+      scale:
+        LinearBase:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.graphing.scale.LinearBase.html
+        LogBase:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.graphing.scale.LogBase.html
+        link: https://docs.manim.community/en/stable/reference/manim.mobject.graphing.scale.html
+    logo:
+      ManimBanner:
+        link: https://docs.manim.community/en/stable/reference/manim.mobject.logo.ManimBanner.html
+      link: https://docs.manim.community/en/stable/reference/manim.mobject.logo.html
+    matrix:
+      DecimalMatrix:
+        link: https://docs.manim.community/en/stable/reference/manim.mobject.matrix.DecimalMatrix.html
+      IntegerMatrix:
+        link: https://docs.manim.community/en/stable/reference/manim.mobject.matrix.IntegerMatrix.html
+      Matrix:
+        link: https://docs.manim.community/en/stable/reference/manim.mobject.matrix.Matrix.html
+      MobjectMatrix:
+        link: https://docs.manim.community/en/stable/reference/manim.mobject.matrix.MobjectMatrix.html
+      link: https://docs.manim.community/en/stable/reference/manim.mobject.matrix.html
+    mobject:
+      Group:
+        link: https://docs.manim.community/en/stable/reference/manim.mobject.mobject.Group.html
+      Mobject:
+        link: https://docs.manim.community/en/stable/reference/manim.mobject.mobject.Mobject.html
+      link: https://docs.manim.community/en/stable/reference/manim.mobject.mobject.html
+    svg:
+      brace:
+        ArcBrace:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.svg.brace.ArcBrace.html
+        Brace:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.svg.brace.Brace.html
+        BraceBetweenPoints:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.svg.brace.BraceBetweenPoints.html
+        BraceLabel:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.svg.brace.BraceLabel.html
+        BraceText:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.svg.brace.BraceText.html
+        link: https://docs.manim.community/en/stable/reference/manim.mobject.svg.brace.html
+      link: https://docs.manim.community/en/stable/reference/manim.mobject.svg.html
+      svg_mobject:
+        SVGMobject:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.svg.svg_mobject.SVGMobject.html
+        VMobjectFromSVGPath:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.svg.svg_mobject.VMobjectFromSVGPath.html
+        link: https://docs.manim.community/en/stable/reference/manim.mobject.svg.svg_mobject.html
+    table:
+      DecimalTable:
+        link: https://docs.manim.community/en/stable/reference/manim.mobject.table.DecimalTable.html
+      IntegerTable:
+        link: https://docs.manim.community/en/stable/reference/manim.mobject.table.IntegerTable.html
+      MathTable:
+        link: https://docs.manim.community/en/stable/reference/manim.mobject.table.MathTable.html
+      MobjectTable:
+        link: https://docs.manim.community/en/stable/reference/manim.mobject.table.MobjectTable.html
+      Table:
+        link: https://docs.manim.community/en/stable/reference/manim.mobject.table.Table.html
+      link: https://docs.manim.community/en/stable/reference/manim.mobject.table.html
+    text:
+      code_mobject:
+        Code:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.text.code_mobject.Code.html
+        link: https://docs.manim.community/en/stable/reference/manim.mobject.text.code_mobject.html
+      link: https://docs.manim.community/en/stable/reference/manim.mobject.text.html
+      numbers:
+        DecimalNumber:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.text.numbers.DecimalNumber.html
+        Integer:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.text.numbers.Integer.html
+        Variable:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.text.numbers.Variable.html
+        link: https://docs.manim.community/en/stable/reference/manim.mobject.text.numbers.html
+      tex_mobject:
+        BulletedList:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.text.tex_mobject.BulletedList.html
+        MathTex:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.text.tex_mobject.MathTex.html
+        SingleStringMathTex:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.text.tex_mobject.SingleStringMathTex.html
+        Tex:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.text.tex_mobject.Tex.html
+        Title:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.text.tex_mobject.Title.html
+        link: https://docs.manim.community/en/stable/reference/manim.mobject.text.tex_mobject.html
+      text_mobject:
+        MarkupText:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.text.text_mobject.MarkupText.html
+        Paragraph:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.text.text_mobject.Paragraph.html
+        Text:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.text.text_mobject.Text.html
+        link: https://docs.manim.community/en/stable/reference/manim.mobject.text.text_mobject.html
+    three_d:
+      link: https://docs.manim.community/en/stable/reference/manim.mobject.three_d.html
+      polyhedra:
+        Dodecahedron:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.three_d.polyhedra.Dodecahedron.html
+        Icosahedron:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.three_d.polyhedra.Icosahedron.html
+        Octahedron:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.three_d.polyhedra.Octahedron.html
+        Polyhedron:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.three_d.polyhedra.Polyhedron.html
+        Tetrahedron:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.three_d.polyhedra.Tetrahedron.html
+        link: https://docs.manim.community/en/stable/reference/manim.mobject.three_d.polyhedra.html
+      three_d_utils:
+        link: https://docs.manim.community/en/stable/reference/manim.mobject.three_d.three_d_utils.html
+      three_dimensions:
+        Arrow3D:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.three_d.three_dimensions.Arrow3D.html
+        Cone:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.three_d.three_dimensions.Cone.html
+        Cube:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.three_d.three_dimensions.Cube.html
+        Cylinder:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.three_d.three_dimensions.Cylinder.html
+        Dot3D:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.three_d.three_dimensions.Dot3D.html
+        Line3D:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.three_d.three_dimensions.Line3D.html
+        Prism:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.three_d.three_dimensions.Prism.html
+        Sphere:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.three_d.three_dimensions.Sphere.html
+        Surface:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.three_d.three_dimensions.Surface.html
+        ThreeDVMobject:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.three_d.three_dimensions.ThreeDVMobject.html
+        Torus:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.three_d.three_dimensions.Torus.html
+        link: https://docs.manim.community/en/stable/reference/manim.mobject.three_d.three_dimensions.html
+    types:
+      image_mobject:
+        AbstractImageMobject:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.types.image_mobject.AbstractImageMobject.html
+        ImageMobject:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.types.image_mobject.ImageMobject.html
+        ImageMobjectFromCamera:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.types.image_mobject.ImageMobjectFromCamera.html
+        link: https://docs.manim.community/en/stable/reference/manim.mobject.types.image_mobject.html
+      link: https://docs.manim.community/en/stable/reference/manim.mobject.types.html
+      point_cloud_mobject:
+        Mobject1D:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.types.point_cloud_mobject.Mobject1D.html
+        Mobject2D:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.types.point_cloud_mobject.Mobject2D.html
+        PGroup:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.types.point_cloud_mobject.PGroup.html
+        PMobject:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.types.point_cloud_mobject.PMobject.html
+        Point:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.types.point_cloud_mobject.Point.html
+        PointCloudDot:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.types.point_cloud_mobject.PointCloudDot.html
+        link: https://docs.manim.community/en/stable/reference/manim.mobject.types.point_cloud_mobject.html
+      vectorized_mobject:
+        CurvesAsSubmobjects:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.types.vectorized_mobject.CurvesAsSubmobjects.html
+        DashedVMobject:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.types.vectorized_mobject.DashedVMobject.html
+        VDict:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.types.vectorized_mobject.VDict.html
+        VGroup:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.types.vectorized_mobject.VGroup.html
+        VMobject:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.types.vectorized_mobject.VMobject.html
+        VectorizedPoint:
+          link: https://docs.manim.community/en/stable/reference/manim.mobject.types.vectorized_mobject.VectorizedPoint.html
+        link: https://docs.manim.community/en/stable/reference/manim.mobject.types.vectorized_mobject.html
+    utils:
+      link: https://docs.manim.community/en/stable/reference/manim.mobject.utils.html
+    value_tracker:
+      ComplexValueTracker:
+        link: https://docs.manim.community/en/stable/reference/manim.mobject.value_tracker.ComplexValueTracker.html
+      ValueTracker:
+        link: https://docs.manim.community/en/stable/reference/manim.mobject.value_tracker.ValueTracker.html
+      link: https://docs.manim.community/en/stable/reference/manim.mobject.value_tracker.html
+    vector_field:
+      ArrowVectorField:
+        link: https://docs.manim.community/en/stable/reference/manim.mobject.vector_field.ArrowVectorField.html
+      StreamLines:
+        link: https://docs.manim.community/en/stable/reference/manim.mobject.vector_field.StreamLines.html
+      VectorField:
+        link: https://docs.manim.community/en/stable/reference/manim.mobject.vector_field.VectorField.html
+      link: https://docs.manim.community/en/stable/reference/manim.mobject.vector_field.html
+  scene:
+    moving_camera_scene:
+      MovingCameraScene:
+        link: https://docs.manim.community/en/stable/reference/manim.scene.moving_camera_scene.MovingCameraScene.html
+      link: https://docs.manim.community/en/stable/reference/manim.scene.moving_camera_scene.html
+    scene:
+      RerunSceneHandler:
+        link: https://docs.manim.community/en/stable/reference/manim.scene.scene.RerunSceneHandler.html
+      Scene:
+        link: https://docs.manim.community/en/stable/reference/manim.scene.scene.Scene.html
+      link: https://docs.manim.community/en/stable/reference/manim.scene.scene.html
+    scene_file_writer:
+      SceneFileWriter:
+        link: https://docs.manim.community/en/stable/reference/manim.scene.scene_file_writer.SceneFileWriter.html
+      link: https://docs.manim.community/en/stable/reference/manim.scene.scene_file_writer.html
+    section:
+      DefaultSectionType:
+        link: https://docs.manim.community/en/stable/reference/manim.scene.section.DefaultSectionType.html
+      Section:
+        link: https://docs.manim.community/en/stable/reference/manim.scene.section.Section.html
+      link: https://docs.manim.community/en/stable/reference/manim.scene.section.html
+    three_d_scene:
+      SpecialThreeDScene:
+        link: https://docs.manim.community/en/stable/reference/manim.scene.three_d_scene.SpecialThreeDScene.html
+      ThreeDScene:
+        link: https://docs.manim.community/en/stable/reference/manim.scene.three_d_scene.ThreeDScene.html
+      link: https://docs.manim.community/en/stable/reference/manim.scene.three_d_scene.html
+    vector_space_scene:
+      LinearTransformationScene:
+        link: https://docs.manim.community/en/stable/reference/manim.scene.vector_space_scene.LinearTransformationScene.html
+      VectorScene:
+        link: https://docs.manim.community/en/stable/reference/manim.scene.vector_space_scene.VectorScene.html
+      link: https://docs.manim.community/en/stable/reference/manim.scene.vector_space_scene.html
+    zoomed_scene:
+      ZoomedScene:
+        link: https://docs.manim.community/en/stable/reference/manim.scene.zoomed_scene.ZoomedScene.html
+      link: https://docs.manim.community/en/stable/reference/manim.scene.zoomed_scene.html
+  utils:
+    bezier:
+      link: https://docs.manim.community/en/stable/reference/manim.utils.bezier.html
+    color:
+      Colors:
+        link: https://docs.manim.community/en/stable/reference/manim.utils.color.Colors.html
+      link: https://docs.manim.community/en/stable/reference/manim.utils.color.html
+    commands:
+      link: https://docs.manim.community/en/stable/reference/manim.utils.commands.html
+    config_ops:
+      DictAsObject:
+        link: https://docs.manim.community/en/stable/reference/manim.utils.config_ops.DictAsObject.html
+      link: https://docs.manim.community/en/stable/reference/manim.utils.config_ops.html
+    debug:
+      link: https://docs.manim.community/en/stable/reference/manim.utils.debug.html
+    deprecation:
+      link: https://docs.manim.community/en/stable/reference/manim.utils.deprecation.html
+    docbuild:
+      link: https://docs.manim.community/en/stable/reference/manim.utils.docbuild.html
+    hashing:
+      link: https://docs.manim.community/en/stable/reference/manim.utils.hashing.html
+    images:
+      link: https://docs.manim.community/en/stable/reference/manim.utils.images.html
+    ipython_magic:
+      ManimMagic:
+        link: https://docs.manim.community/en/stable/reference/manim.utils.ipython_magic.ManimMagic.html
+      link: https://docs.manim.community/en/stable/reference/manim.utils.ipython_magic.html
+    iterables:
+      link: https://docs.manim.community/en/stable/reference/manim.utils.iterables.html
+    paths:
+      link: https://docs.manim.community/en/stable/reference/manim.utils.paths.html
+    rate_functions:
+      link: https://docs.manim.community/en/stable/reference/manim.utils.rate_functions.html
+    simple_functions:
+      link: https://docs.manim.community/en/stable/reference/manim.utils.simple_functions.html
+    sounds:
+      link: https://docs.manim.community/en/stable/reference/manim.utils.sounds.html
+    space_ops:
+      link: https://docs.manim.community/en/stable/reference/manim.utils.space_ops.html
+    tex:
+      TexTemplate:
+        link: https://docs.manim.community/en/stable/reference/manim.utils.tex.TexTemplate.html
+      TexTemplateFromFile:
+        link: https://docs.manim.community/en/stable/reference/manim.utils.tex.TexTemplateFromFile.html
+      link: https://docs.manim.community/en/stable/reference/manim.utils.tex.html
+    tex_file_writing:
+      link: https://docs.manim.community/en/stable/reference/manim.utils.tex_file_writing.html
+    tex_templates:
+      TexFontTemplates:
+        link: https://docs.manim.community/en/stable/reference/manim.utils.tex_templates.TexFontTemplates.html
+      TexTemplateLibrary:
+        link: https://docs.manim.community/en/stable/reference/manim.utils.tex_templates.TexTemplateLibrary.html
+      link: https://docs.manim.community/en/stable/reference/manim.utils.tex_templates.html
+reference_index/animations:
+  link: https://docs.manim.community/en/stable/reference_index/animations.html
+reference_index/cameras:
+  link: https://docs.manim.community/en/stable/reference_index/cameras.html
+reference_index/configuration:
+  link: https://docs.manim.community/en/stable/reference_index/configuration.html
+reference_index/mobjects:
+  link: https://docs.manim.community/en/stable/reference_index/mobjects.html
+reference_index/scenes:
+  link: https://docs.manim.community/en/stable/reference_index/scenes.html
+reference_index/utilities_misc:
+  link: https://docs.manim.community/en/stable/reference_index/utilities_misc.html

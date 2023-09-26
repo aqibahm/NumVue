@@ -1,0 +1,11 @@
+langchain
+manim
+mactex-no-gui
+numpy
+pandas
+streamlit==1.4.0
+openai==0.28.0
+typing==3.7.4.3
+matplotlib
+html2text
+pyyaml

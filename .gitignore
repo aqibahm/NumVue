@@ -1,2 +1,8 @@
 manim_venv
+.streamlit
+.env
+llama_index/
+numvue_venv/
+numvue_venv
+numvue_venv/lib/python3.11/site-packages/torch/lib/libtorch_cpu.dylib
 
