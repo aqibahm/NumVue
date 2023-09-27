@@ -10,3 +10,6 @@ html2text
 pyyaml
 manimpango
 pycairo
+libcairo2-dev
+pkg-config
+python3-dev
