@@ -5,17 +5,15 @@ class GeneratedCode(ThreeDScene):
         axes = ThreeDAxes()
         self.add(axes)
 
-        parabola = ParametricFunction(
-            lambda t: np.array([
-                t,
-                t**2,
-                0
-            ]),
-            t_range=np.linspace(-2, 2, 100),
-            color=YELLOW
-        )
+        cube = Cube()
+        self.add(cube)
 
-        self.add(parabola)
+        self.set_camera_orientation(phi=75 * DEGREES, theta=30 * DEGREES)
 
-        self.set_camera_orientation(phi=75 * DEGREES, theta=-45 * DEGREES)
+        self.play(Create(cube))
+
+        self.begin_ambient_camera_rotation(rate=0.1)
+        self.wait(5)
+        self.stop_ambient_camera_rotation()
+
         self.wait(2)

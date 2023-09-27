@@ -10,3 +10,4 @@ html2text
 pyyaml
 manimpango
 pycairo
+time

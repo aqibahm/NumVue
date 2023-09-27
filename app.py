@@ -3,6 +3,7 @@ import os
 import openai
 import streamlit as st
 import re
+import time
 
 # Helper Functions:
 openai_api_key = st.secrets["OPENAI_API_KEY"]
@@ -144,6 +145,9 @@ def manim_viewer():
         else:
             print("\nVideo file not found.")
             st.error("Video generation unsuccessful, please retry.")
+            time.sleep(3)
+            reset_view()
+            st.rerun()
 
 
 def chat_input(prompt_):
@@ -160,7 +164,7 @@ def chat_input(prompt_):
     if not class_name:
         raise Exception("Relevant class not found inside generated code.")
 
-    st.experimental_rerun()
+    st.rerun()
 
 def reset_view():
     st.session_state["show_chat_input"] = True
@@ -184,7 +188,7 @@ if st.session_state["show_manim_viewer"]:
 
     if st.button("Re-Imagine"):
         reset_view()
-        st.experimental_rerun()
+        st.rerun()
 
 
 
