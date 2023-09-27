@@ -11,3 +11,6 @@ sox
 ffmpeg
 libcairo2
 texlive-full
+libpango1.0-dev
+pkg-config
+python3-dev
