@@ -143,6 +143,8 @@ def manim_viewer():
                 st.video(video_path)
         else:
             print("\nVideo file not found.")
+            st.error("Video generation unsuccessful, please retry.")
+
 
 def chat_input(prompt_):
     msg = create_chat_model(openai_api_key, prompt_)
@@ -168,12 +170,18 @@ def reset_view():
 st.title("👁️ NumVue")
 
 if st.session_state["show_chat_input"]:
-    if prompt_ := st.text_input("What shall we imagine?"):
-        chat_input(prompt_)
+    prompt_ = st.text_input("What shall we imagine?")
+    submit_button = st.button("Imagine!")
+    if submit_button:
+        if prompt_:
+            with st.spinner("Crafting animation!"):
+                chat_input(prompt_)
+        else:
+            st.error("Please enter a description and try again.")
 
 if st.session_state["show_manim_viewer"]:
     manim_viewer()
-    
+
     if st.button("Re-Imagine"):
         reset_view()
         st.experimental_rerun()

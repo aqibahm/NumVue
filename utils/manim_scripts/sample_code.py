@@ -5,11 +5,17 @@ class GeneratedCode(ThreeDScene):
         axes = ThreeDAxes()
         self.add(axes)
 
-        # Plotting the parabola point by point
-        parabola = ParametricFunction(lambda t: [t, t**2, 0], t_range=[-2, 2], color=YELLOW)
-        self.play(Create(parabola))
+        parabola = ParametricFunction(
+            lambda t: np.array([
+                t,
+                t**2,
+                0
+            ]),
+            t_range=np.linspace(-2, 2, 100),
+            color=YELLOW
+        )
 
-        # Adding coordinate labels
-        axes.add_coordinates()
+        self.add(parabola)
 
-        self.wait()
+        self.set_camera_orientation(phi=75 * DEGREES, theta=-45 * DEGREES)
+        self.wait(2)
