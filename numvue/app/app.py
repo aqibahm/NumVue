@@ -144,11 +144,6 @@ def manim_viewer():
         else:
             print("\nVideo file not found.")
 
-    if st.button("Re-Imagine"):
-        reset_view()
-        st.experimental_rerun()
-
-
 def chat_input(prompt_):
     msg = create_chat_model(openai_api_key, prompt_)
 
@@ -178,6 +173,10 @@ if st.session_state["show_chat_input"]:
 
 if st.session_state["show_manim_viewer"]:
     manim_viewer()
+    
+    if st.button("Re-Imagine"):
+        reset_view()
+        st.experimental_rerun()
 
 
 

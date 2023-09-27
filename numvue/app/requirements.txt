@@ -1,6 +1,5 @@
 langchain
 manim
-mactex-no-gui
 numpy
 pandas
 streamlit==1.4.0

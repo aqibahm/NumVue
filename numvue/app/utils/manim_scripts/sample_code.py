@@ -2,33 +2,37 @@ from manim import *
 
 class GeneratedCode(ThreeDScene):
     def construct(self):
-        # Set up the axes
         axes = ThreeDAxes()
         self.add(axes)
 
-        # Add coordinate labels
-        axes.add_coordinates()
+        # Parameters for the Gaussian distribution
+        mu = 0
+        sigma = 1
 
-        # Create the sun
-        sun = Sphere(radius=1, color=YELLOW)
-        self.add(sun)
+        # Generate the Gaussian curve
+        x = np.linspace(-5, 5, 100)
+        y = (1 / (sigma * np.sqrt(2 * np.pi))) * np.exp(-0.5 * ((x - mu) / sigma) ** 2)
 
-        # Create the planet's elliptical path
-        a = 3  # Semi-major axis
-        b = 2  # Semi-minor axis
-        t = np.linspace(0, 2 * PI, 100)
-        x = a * np.cos(t)
-        y = b * np.sin(t)
-        z = np.zeros_like(t)
-        path = ParametricFunction(lambda t: np.array([x[t], y[t], z[t]]), t_range=[0, len(t) - 1], color=BLUE)
-        self.add(path)
+        # Plot the Gaussian curve
+        curve = axes.plot(x, y, color=BLUE)
 
-        # Create the planet
-        planet = Sphere(radius=0.5, color=GREEN)
-        self.add(planet)
+        # Number of dots to generate
+        num_dots = 100
 
-        # Animate the planet's movement
-        self.play(Create(path))
-        self.play(MoveAlongPath(planet, path), run_time=5)
+        # Generate random x-coordinates for the dots
+        x_coords = np.random.normal(mu, sigma, num_dots)
 
-        self.wait()
+        # Generate the falling dots
+        dots = VGroup()
+        for x_coord in x_coords:
+            dot = Dot(radius=0.05, color=RED)
+            dot.move_to(axes.c2p(x_coord, 5, 0))  # Start the dots at the top of the scene
+            dots.add(dot)
+
+        # Animate the falling dots
+        self.play(Create(curve))
+        self.play(Create(dots))
+        self.play(dots.animate.arrange(DOWN, buff=0.1).shift(UP * 5), run_time=3)
+
+        self.wait()from manim import *
+import numpy as np
