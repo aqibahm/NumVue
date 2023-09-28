@@ -11,38 +11,21 @@
  Toggle Light / Dark / Auto color theme 
  
  
- 
- 
- 
- 
- Toggle table of contents sidebar 
- 
- 
- 
- 
- 
- animation # 
- Animate mobjects. 
- Classes 
- 
- 
- 
- 
- 
- 
- 
- Animation 
- An animation. 
- 
- Wait 
- A "no operation" animation. 
- 
- 
- 
- 
- Functions 
- 
- 
+ Toggle table of contents sidebar
+
+ animation #
+ Animate mobjects.
+ Classes
+
+
+ Animation
+ An animation.
+
+ Wait
+ A "no operation" animation.
+
+ Functions
+
  override_animation ( animation_class ) [source] # 
  Decorator used to mark methods as overrides for specific Animation types. 
  Should only be used to decorate methods of classes derived from Mobject .

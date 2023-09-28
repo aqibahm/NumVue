@@ -147,7 +147,7 @@ def manim_viewer():
             st.error("Video generation unsuccessful, please retry.")
             time.sleep(3)
             reset_view()
-            st.rerun()
+            st.experimental_rerun()
 
 
 def chat_input(prompt_):
@@ -164,7 +164,7 @@ def chat_input(prompt_):
     if not class_name:
         raise Exception("Relevant class not found inside generated code.")
 
-    st.rerun()
+    st.experimental_rerun()
 
 def reset_view():
     st.session_state["show_chat_input"] = True
@@ -188,7 +188,7 @@ if st.session_state["show_manim_viewer"]:
 
     if st.button("Re-Imagine"):
         reset_view()
-        st.rerun()
+        st.experimental_rerun()
 
 
 
