@@ -5,6 +5,9 @@ import streamlit as st
 import re
 import time
 
+# 1. Wire manim output to GPT in case of errors.
+# 2. Visit docs to learn more about manim command verbosity.
+
 # Helper Functions:
 openai_api_key = st.secrets["OPENAI_API_KEY"]
 
@@ -144,10 +147,6 @@ def manim_viewer():
                 st.video(video_path)
         else:
             print("\nVideo file not found.")
-            st.error("Video generation unsuccessful, please retry.")
-            time.sleep(3)
-            reset_view()
-            st.experimental_rerun()
 
 
 def chat_input(prompt_):
