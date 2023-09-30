@@ -149,6 +149,7 @@ def manim_viewer():
                 st.video(video_path)
         else:
             print("\nVideo file not found.")
+            reset_view()
 
 
 def chat_input(prompt_):
