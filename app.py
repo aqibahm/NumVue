@@ -128,8 +128,6 @@ def manim_viewer():
         print("Video Path: ", video_path)
         if os.path.exists(video_path):
             os.remove(video_path)
-        if os.path.exists(manim_script_path):
-            os.remove(manim_script_path)
 
         # Run the Manim script in a subprocess
         with subprocess.Popen(["manim", "-qh", manim_script_path, "output_video"], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text = True) as process:
