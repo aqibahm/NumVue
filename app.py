@@ -130,13 +130,12 @@ def manim_viewer():
             os.remove(video_path)
 
         # Run the Manim script in a subprocess
-        with subprocess.Popen(["manim", "-qh", manim_script_path, "output_video"], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text = True) as process:
-            # Continuously check if the video animation is ready
-            with st.spinner("Baking animation!"):
-                while process.poll() is None:
-                    continue
+        script_command = ["manim", "-qh", manim_script_path, "output_video"]
+        with st.spinner("Baking animation!"):
+            result = subprocess.run(script_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text = True)
+            print(result)
                 # Show progress indicator in Streamlit
-            st.text("Freshly baked, for you.")
+        st.text("Freshly baked, for you.")
 
         print(video_path)
         print(os.getcwd())
