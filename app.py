@@ -44,6 +44,44 @@ if "show_chat_input" not in st.session_state:
 # 6. Return animation video.
 # 7. Return manim verbose logs.
 
+def prettify_manim_output(data):
+    # Header
+    output = "\n**CompletedProcess Details**:\n\n"
+
+    # Args
+    output += "- **Args**:\n"
+    for arg in data["args"]:
+        output += f"  - `{arg}`\n"
+    output += "\n"
+
+    # Return Code
+    output += f"- **Return Code**: {data['returncode']}\n\n"
+
+    # Stdout
+    output += "- **stdout**:\n\n```\n"
+    stdout_lines = data["stdout"].split("\n")
+    for line in stdout_lines:
+        line = line.strip()
+        if line:
+            if "ERROR" in line or "INFO" in line:
+                date, log_type, content, source = line.split()
+                output += f"[{date} {log_type}]: {content}\n"
+                output += f"Source: {source.split(':')[0]}\n\n"
+            else:
+                output += f"{line}\n"
+    output += "```\n\n"
+
+    # Stderr
+    output += "- **stderr**:\n\n```\n"
+    stderr_lines = data["stderr"].split("\n")
+    for line in stderr_lines:
+        line = line.strip()
+        if line:
+            output += f"{line}\n"
+    output += "```\n\n"
+
+    return output
+
 def extract_code(text):
     pattern = r'```python(.*?)```'
     matches = re.findall(pattern, text, re.DOTALL)
@@ -133,7 +171,7 @@ def manim_viewer():
         script_command = ["manim", "-qh", manim_script_path, "output_video"]
         with st.spinner("Baking animation!"):
             result = subprocess.run(script_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text = True)
-            print(result)
+            print(prettify_manim_output(result))
                 # Show progress indicator in Streamlit
         st.text("Freshly baked, for you.")
 
@@ -147,7 +185,6 @@ def manim_viewer():
         else:
             print("\nVideo file not found.")
             reset_view()
-
 
 def chat_input(prompt_):
     msg = create_chat_model(openai_api_key, prompt_)
